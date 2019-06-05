@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
-
-namespace message_service.Models
+﻿namespace message_service.Models
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class Lamp
     {
         [Required]
