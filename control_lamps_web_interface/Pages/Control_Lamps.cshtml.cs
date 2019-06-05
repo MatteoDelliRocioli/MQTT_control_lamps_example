@@ -18,13 +18,17 @@ namespace control_lamps_web_interface.Pages
             Input = new Lamp();
         }
 
-        public async Task OnPost()
+        public void OnPost()
         {
             var lamp = new Lamp
             {
                 Name = Input.Name,
-                Color= Input.Color
+                Color = Request.Form["Colors"]
             };
+
+            //MQTTMessageService.Connect();
+
+            //MQTTMessageService.Send(lamp);
 
             RedirectToPage();
         }
