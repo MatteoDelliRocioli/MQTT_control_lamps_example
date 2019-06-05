@@ -1,0 +1,22 @@
+﻿@page
+@model control_lamps_web_interface.Pages.Control_LampsModel
+@{
+    ViewData["Title"] = "Control_Lamps";
+}
+
+<h1>Control_Lamps</h1>
+
+<form method="post">
+    <label asp-for="Input.Name"></label>
+    <input asp-for="Input.Name" class="col-md-5" />
+    <span asp-validation-for="Input.Name" class="text-danger"></span>
+    <br />
+    <label asp-for="Input.Color"></label>
+    @*<input asp-for="_message.Text" class="form-control" rows="4" />*@
+    <textarea asp-for="Input.Color" class="form-control" rows="3" id="message"></textarea>
+    <span asp-validation-for="Input.Color" class="text-danger"></span>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Send Command</button>
+</form>
+
