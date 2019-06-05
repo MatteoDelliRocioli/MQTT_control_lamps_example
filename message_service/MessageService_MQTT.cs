@@ -1,10 +1,11 @@
-﻿using System;
+﻿using message_service.Models;
+using System;
 using uPLibrary.Networking.M2Mqtt;
 using uPLibrary.Networking.M2Mqtt.Messages;
 
 namespace message_service
 {
-    class Program
+    class MessageService_MQTT : IMessageService <Lamp>
     {
         static void Main(string[] args)
         {
@@ -28,6 +29,16 @@ namespace message_service
             // Handle message received
             var message = System.Text.Encoding.Default.GetString(e.Message);
             System.Console.WriteLine("Message received: " + message);
+        }
+
+        public void Connect()
+        {
+            
+        }
+
+        public void Send(Lamp message)
+        {
+            
         }
     }
 }
