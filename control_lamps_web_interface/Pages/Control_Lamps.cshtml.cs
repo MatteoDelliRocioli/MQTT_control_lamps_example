@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using message_service;
 using message_service.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -10,6 +11,8 @@ namespace control_lamps_web_interface.Pages
 {
     public class Control_LampsModel : PageModel
     {
+
+        public IMessageService<Lamp> messageService;
         [BindProperty]
         public Lamp Input { get; set; }
 
@@ -18,13 +21,17 @@ namespace control_lamps_web_interface.Pages
             Input = new Lamp();
         }
 
-        public async Task OnPost()
+        public void OnPost()
         {
             var lamp = new Lamp
             {
                 Name = Input.Name,
                 Color= Input.Color
             };
+
+            messageService.Connect();
+
+            messageService.Send(lamp);
 
             RedirectToPage();
         }

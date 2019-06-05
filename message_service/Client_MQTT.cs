@@ -31,4 +31,3 @@ namespace message_service
         }
     }
 }
-}
