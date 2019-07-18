@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28922.388
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "control_lamps_web_interface", "control_lamps_web_interface\control_lamps_web_interface.csproj", "{D5C5A9D2-96DA-4D2F-B117-06B2862ABAC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "control_lamps_web_interface", "control_lamps_web_interface\control_lamps_web_interface.csproj", "{D5C5A9D2-96DA-4D2F-B117-06B2862ABAC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "display_lamps_console", "display_lamps_console\display_lamps_console.csproj", "{1B031F19-DC3F-43C2-B70D-F8CFFF1ED491}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "display_lamps_console", "display_lamps_console\display_lamps_console.csproj", "{1B031F19-DC3F-43C2-B70D-F8CFFF1ED491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "message_service", "message_service\message_service.csproj", "{70B646A7-A89C-42E1-AB9A-1CC30DDCEFF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "message_service", "message_service\message_service.csproj", "{70B646A7-A89C-42E1-AB9A-1CC30DDCEFF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{96448959-9635-4E01-8116-03103B732403}"
+	ProjectSection(SolutionItems) = preProject
+		MQTT_Docs\Mqtt_docs.md = MQTT_Docs\Mqtt_docs.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
